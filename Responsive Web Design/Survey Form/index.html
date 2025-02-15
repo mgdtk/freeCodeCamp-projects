@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Selena Gomez Survey Form</h1>
+        <p id="description">Thank you for taking the time to answer the form!</p>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter your name" required></label>
+                <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Enter your email" required></label>
+                <label for="number" id="number-label">Age: <input id="number" name="number" type="number" placeholder="Enter your age" min="12" max="60"></label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">What is your favorite Selena Gomez album/EP?
+                    <select id="dropdown" name="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="1">Kiss & Tell</option>
+                        <option value="2">A Year Without Rain</option>
+                        <option value="3">When The Sun Goes Down</option>
+                        <option value="4">Stars Dance</option>
+                        <option value="5">For You</option>
+                        <option value="6">Revival</option>
+                        <option value="7">Rare</option>
+                        <option value="8">Revelación</option>
+                        <option value="9">I Said I Love You First</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>When did you start following her?</legend>
+                <label for="music-career"><input id="music-career" name="career" type="radio" value="music-career" checked>Music career</label>
+                <label for="acting-career"><input id="acting-career" name="career" type="radio" value="music-career">Acting career</label>
+            </fieldset>
+            <fieldset>
+                <legend>If you've watched Only Murders In The Building, what are your favorite seasons?</legend>
+                <label for="season-1">Season 1<input id="season-1" value="1" name="season" type="checkbox"></label>
+                <label for="season-2">Season 2<input id="season-2" value="2" name="season" type="checkbox"></label>
+                <label for="season-3">Season 3<input id="season-3" value="3" name="season" type="checkbox"></label>
+                <label for="season-4">Season 4<input id="season-4" value="4" name="season" type="checkbox"></label>
+            </fieldset>
+            <fieldset>
+                <label for="description">What do you like most about Selena?
+                    <textarea id="description" name="description" rows="3" cols="30" placeholder="She's kind..."></textarea>
+                </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </body>
+</html>
