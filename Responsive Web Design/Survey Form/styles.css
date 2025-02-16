@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+
 body {
     width: 100%;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(#FFB6C1, #DC143C, #FF7F50);
+    background: linear-gradient(#F0A8D0, #F7B5CA, #FFC6C6);
     font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #740938;
 }
 
 h1, p {
@@ -29,10 +35,46 @@ label {
 
 input, textarea, select {
     width: 100%;
+    min-height: 2em;
+    margin: 10px 0 0 0;
+    box-sizing: border-box;
+    background-color: #FFEBD4;
+    border: 1px solid #FFEBD4;
+    color: #740938;
+}
+
+input[type="submit"] {
+    padding: 0.5em;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    border-color: #740938;
+}
+
+input[type="submit"]:active {
+    background-color: #740938;
+    color: #FFEBD4;
+    border-color: #FFEBD4;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #740938;
+    width: 18px;
+}
+
+fieldset:last-of-type {
+    margin-top: -10px;
 }
 
 .inline {
     width: unset;
     margin: 0 0.5em 0 0;
     vertical-align: middle;
+}
+
+::placeholder {
+    color: #740938;
 }
