@@ -1,11 +1,80 @@
 body {
+    font-size: 1.6rem;
     text-align: center;
+    background-color: #eee;
+    margin: 0;
+    color: #2f1619;
+}
+
+h1 {
+    margin: 40px 0 0 0;
+    font-size: 2em;
+    padding: 0 10px;
 }
 
 .quote {
+    font-size: 1.6rem;
     font-style: italic;
+    text-align: center;
+    margin: 32px 0;
+    padding: 0 10px;
+}
+
+figcaption {
+    font-size: 1.2rem;
+    padding: 12px 0 0 0;
+}
+
+ul {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    padding: 0 40px;
+}
+
+li {
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.3rem;
+    text-align: justify;
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
 }
 
 #image {
-    max-width: 35%;
+    width: 1000px;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+#headline {
+    font-size: 1.7rem;
+    margin: 50px 0;
+    padding: 0 10px;
+}
+
+h4 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 0 50px 0;
+    padding: 0 10px;
+}
+
+a:link, a:visited {
+    color: #900503;
+}
+
+a:hover {
+    color: #2f1619;
+}
+
+a:active {
+    color: #635053;
 }
