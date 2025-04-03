@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="freeCodeCamp Python technical documentation page">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+            <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+            <li><a class="nav-link" href="#if...else_statement">if...else statement</a></li>
+            <li><a class="nav-link" href="#while_statement">while statement</a></li>
+            <li><a class="nav-link" href="#for_statement">for statement</a></li>
+            <li><a class="nav-link" href="#Function_declarations">Function declarations</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python's elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
+                <p>Python has a simple syntax similar to the English language. It also has syntax that allows developers to write programs with fewer lines than some other programming languages, making it very popular.</p>
+                <p>The most recent major version of Python is Python 3. Python files use the .py file extension.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Hello_world">
+            <header>Hello world</header>
+            <article>
+                <p>To get started with writing Python, open any text editor and write your first "Hello world" Python code:</p>
+                <code>print("Hello, world!")</code>
+                <p>Remember to use the .py file extension.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Syntax">
+            <header>Syntax</header>
+            <article>
+                <h1>Indentation</h1>
+                <p>Indentation refers to the spaces at the beginning of a code line. Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important. Python uses indentation to indicate a block of code. For example:</p>
+                <code>
+                    if 5 > 2:
+                        print("Five is greater than two!")
+                </code>
+                <h1>Comments</h1>
+                <p>Comments can be used to explain code, make it more readable and prevent execution when testing code.</p>
+                <p>Comments start with a <span>#</span>:</p>
+                <code># This is a comment</code>
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <p>Variables are containers for storing data values. The variable names must follow certain rules:</p>
+                <ul>
+                    <li>A variable name must start with a letter or the underscore character</li>
+                    <li>A variable name cannot start with a number</li>
+                    <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+                    <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+                    <li>A variable name cannot be any of the <a href="https://www.w3schools.com/python/python_variables_names.asp" target="_blank">Python keywords</a></li>
+                </ul>
+                <h1>Declaring variables</h1>
+                <p>You can declare a variable by simply assigning it a value, for example:</p>
+                <code>x = 42</code>
+                <p>Python allows you to assign values to multiple variables in one line:</p>
+                <code>x, y, z = "Orange", "Banana", "Cherry"</code>
+                <p>And you can assign the same value to multiple variables in one line:</p>
+                <code>x = y = z = "Orange"</code>
+                <h2>Variable scope</h2>
+                <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
+                <code>
+                    x = 10 # global variable
+                    def myfunc():
+                        y = 20 # local variable
+                </code>
+                <p>To create a global variable inside a function, you can use the <span>global</span> keyword.</p>
+                <code>
+                    def myfunc():
+                        global x
+                        x = 10
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <article>
+                <p>Variables can store data of different types, and different types can do different things. Python has the following data types built-in by default, in these categories:</p>
+                <ul>
+                    <li>Text Type: <span>str</span></li>
+                    <li>Numeric Types: <span>int</span>, <span>float</span>, <span>complex</span></li>
+                    <li>Sequence Types: <span>list</span>, <span>tuple</span>, <span>range</span></li>
+                    <li>Mapping Type: <span>dict</span></li>
+                    <li>Set Types: <span>set</span>, <span>frozenset</span></li>
+                    <li>Boolean Type: <span>bool</span></li>
+                    <li>Binary Types: <span>bytes</span>, <span>bytearray</span>, <span>memoryview</span></li>
+                    <li>None Type: <span>NoneType</span></li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="if...else_statement">
+            <header>if...else statement</header>
+            <article>
+                <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
+                <code>
+                    x = int(input("Please enter an integer: "))
+                    if x < 0:
+                        x = 0
+                        print('Negative changed to zero')
+                    elif x == 0:
+                        print('Zero')
+                    elif x == 1:
+                        print('Single')
+                    else:
+                        print('More')
+                </code>
+                <p>There can be zero or more elif parts, and the else part is optional. The keyword 'elif' is short for 'else if', and is useful to avoid excessive indentation.</p>
+            </article>
+        </section>
+        <section class="main-section" id="while_statement">
+            <header>while statement</header>
+            <article>
+                <p>With the while loop, a set of statements is executed as long as a condition is true.</p>
+                <p>The code below, for example, prints from 1 to 5:</p>
+                <code>
+                    i = 1
+                    while i < 6:
+                        print(i)
+                        i += 1
+                </code>
+                <p>The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.</p>
+                <p>Note: remember to increment i, or else the loop will continue forever.</p>
+            </article>
+        </section>
+        <section class="main-section" id="for_statement">
+            <header>for statement</header>
+            <article>
+                <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string). This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</p>
+                <p>The code below will print apple, banana and cherry:</p>
+                <code>
+                    fruits = ["apple", "banana", "cherry"]
+                    for x in fruits:
+                        print(x)
+                </code>
+                <p>The for loop does not require an indexing variable to set beforehand.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Function_declarations">
+            <header>Function declarations</header>
+            <article>
+                <p>A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.</p>
+                <p>In Python a function is defined using the def keyword. To call a function, use the function name followed by parenthesis:</p>
+                <code>
+                    def my_function():
+                        print("Hello from a function")
+                    
+                    my_function()
+                </code>
+                <p>To let a function return a value, use the return statement:</p>
+                <code>
+                    def my_function(x):
+                        return 5 * x
+
+                    print(my_function(3))
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <p>All the documentation in this page is taken from:</p>
+                <ul>
+                    <li><a href="https://docs.python.org/3/" target="_blank">Python.org</a></li>
+                    <li><a href="https://www.w3schools.com/python/default.asp" target="_blank">W3Schools</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
