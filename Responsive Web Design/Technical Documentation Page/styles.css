@@ -38,6 +38,12 @@ pre {
     padding: 20px;
 }
 
+span {
+    background-color: #f7f7f7;
+    padding: 2px 3px;
+    color: rgba(255,0,26,0.5);
+}
+
 @media (min-width: 1024px) {
     #navbar {
         position: fixed;
@@ -48,6 +54,7 @@ pre {
         border-right: solid;
         border-color: rgba(0, 22, 22, 0.4);
         border-width: 2px;
+        overflow-y: auto;
     }
 
     #navbar header {
