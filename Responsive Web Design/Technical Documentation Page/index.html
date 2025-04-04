@@ -25,7 +25,7 @@
     </nav>
     <main id="main-doc">
         <section class="main-section" id="Introduction">
-            <header>Introduction</header>
+            <header class="introduction">Introduction</header>
             <article>
                 <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python's elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
                 <p>Python has a simple syntax similar to the English language. It also has syntax that allows developers to write programs with fewer lines than some other programming languages, making it very popular.</p>
@@ -45,10 +45,8 @@
             <article>
                 <h1>Indentation</h1>
                 <p>Indentation refers to the spaces at the beginning of a code line. Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important. Python uses indentation to indicate a block of code. For example:</p>
-                <code>
-                    if 5 > 2:
-                        print("Five is greater than two!")
-                </code>
+                <pre><code>if 5 > 2:
+    print("Five is greater than two!")</code></pre>
                 <h1>Comments</h1>
                 <p>Comments can be used to explain code, make it more readable and prevent execution when testing code.</p>
                 <p>Comments start with a <span>#</span>:</p>
@@ -73,19 +71,15 @@
                 <code>x, y, z = "Orange", "Banana", "Cherry"</code>
                 <p>And you can assign the same value to multiple variables in one line:</p>
                 <code>x = y = z = "Orange"</code>
-                <h2>Variable scope</h2>
+                <h1>Variable scope</h1>
                 <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
-                <code>
-                    x = 10 # global variable
-                    def myfunc():
-                        y = 20 # local variable
-                </code>
+                <pre><code>x = 10 # global variable
+def myfunc():
+    y = 20 # local variable</code></pre>
                 <p>To create a global variable inside a function, you can use the <span>global</span> keyword.</p>
-                <code>
-                    def myfunc():
-                        global x
-                        x = 10
-                </code>
+                <pre><code>def myfunc():
+    global x
+    x = 10</code></pre>
             </article>
         </section>
         <section class="main-section" id="Data_Types">
@@ -108,18 +102,16 @@
             <header>if...else statement</header>
             <article>
                 <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
-                <code>
-                    x = int(input("Please enter an integer: "))
-                    if x < 0:
-                        x = 0
-                        print('Negative changed to zero')
-                    elif x == 0:
-                        print('Zero')
-                    elif x == 1:
-                        print('Single')
-                    else:
-                        print('More')
-                </code>
+                <pre><code>x = int(input("Please enter an integer: "))
+if x < 0:
+    x = 0
+    print('Negative changed to zero')
+elif x == 0:
+    print('Zero')
+elif x == 1:
+    print('Single')
+else:
+    print('More')</code></pre>
                 <p>There can be zero or more elif parts, and the else part is optional. The keyword 'elif' is short for 'else if', and is useful to avoid excessive indentation.</p>
             </article>
         </section>
@@ -128,12 +120,10 @@
             <article>
                 <p>With the while loop, a set of statements is executed as long as a condition is true.</p>
                 <p>The code below, for example, prints from 1 to 5:</p>
-                <code>
-                    i = 1
-                    while i < 6:
-                        print(i)
-                        i += 1
-                </code>
+                <pre><code>i = 1
+while i < 6:
+    print(i)
+    i += 1</code></pre>
                 <p>The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.</p>
                 <p>Note: remember to increment i, or else the loop will continue forever.</p>
             </article>
@@ -143,11 +133,9 @@
             <article>
                 <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string). This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</p>
                 <p>The code below will print apple, banana and cherry:</p>
-                <code>
-                    fruits = ["apple", "banana", "cherry"]
-                    for x in fruits:
-                        print(x)
-                </code>
+                <pre><code>fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    print(x)</code></pre>
                 <p>The for loop does not require an indexing variable to set beforehand.</p>
             </article>
         </section>
@@ -156,19 +144,15 @@
             <article>
                 <p>A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.</p>
                 <p>In Python a function is defined using the def keyword. To call a function, use the function name followed by parenthesis:</p>
-                <code>
-                    def my_function():
-                        print("Hello from a function")
-                    
-                    my_function()
-                </code>
-                <p>To let a function return a value, use the return statement:</p>
-                <code>
-                    def my_function(x):
-                        return 5 * x
+                <pre><code>def my_function():
+    print("Hello from a function")
 
-                    print(my_function(3))
-                </code>
+my_function()</code></pre>
+                <p>To let a function return a value, use the return statement:</p>
+                <pre><code>def my_function(x):
+    return 5 * x
+
+print(my_function(3))</code></pre>
             </article>
         </section>
         <section class="main-section" id="Reference">
