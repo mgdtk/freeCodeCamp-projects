@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #efefef;
+    letter-spacing: -1px;
+}
+
+#header {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    background-color: #dcdcdc;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    gap: 5px;
+}
+
+.logo svg {
+    width: 32px;
+    height: 32px;
+}
+
+#nav-bar {
+    display: flex;
+    height: 100%;
+    width: 60%;
+}
+
+#nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+}
+
+#nav-bar a {
+    font-size: 1.5em;
+}
+
+main {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: 100px;
+    width: 100%;
+    padding: 20px;
+}
+
+.email-submission, .book-selections {
+    width: 100%;
+}
+
+.email-submission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+}
+
+#form input {
+    width: 100%;
+    height: 30px;
+    padding: 1px 6px;
+    font-size: 1em;
+}
+
+.gallery img {
+    width: 200px;
+    height: 320px;
+}
+
+.gallery {
+    background: #dcdcdc;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px;
+}
+
+section {
+    margin: 20px auto;
+}
+
+.section-title {
+    font-size: 1.8em;
+    font-weight: 600;
+    padding: 14px 8px;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    top: 100px;
+    background-color: #dcdcdc;
+    height: 60px;
+    margin-top: 20px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    width: 50%;
+}
+
+footer a {
+    padding: 12px;
+    font-size: 1.2em;
+}
+
+#nav-bar a, footer a {
+    color: #000000;
+    text-decoration: none;
+}

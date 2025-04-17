@@ -10,7 +10,11 @@
 <body>
     <header id="header">
         <div class="logo">
-            <img id="header-img" src="" alt="">
+            <!-- <img id="header-img" src="" alt=""> -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+            </svg>
+            <h1>Bookshop</h1>
         </div>
         <nav id="nav-bar">
             <ul>
@@ -21,24 +25,102 @@
         </nav>
     </header>
     <main>
-        <div>
-            <h1></h1>
+        <div class="email-submission">
+            <h2>Get notified about special offers and new releases</h2>
             <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <input type="email" name="email" id="email" placeholder="Enter your email address" required>
-                <input type="submit" value="" id="submit">
+                <input type="submit" value="Notify Me" id="submit">
             </form>
         </div>
-        <div>
+        <div class="book-selections">
             <section id="Best_Sellers">
-                <header></header>
+                <header class="section-title">Best Sellers</header>
+                <div class="gallery">
+                    <div>
+                        <a href=""><img src="https://m.media-amazon.com/images/I/61o5Q8IIq4L._AC_UF1000,1000_QL80_.jpg" alt="Sunrise on the Reaping by Suzanne Collins book cover"></a>
+                        <p class="price-tag">$26.03</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="https://m.media-amazon.com/images/I/917iVfhEhxL.jpg" alt="Verity by Colleen Hoover book cover"></a>
+                        <p class="price-tag">$15.80</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="https://m.media-amazon.com/images/I/71ls-I6A5KL.jpg" alt="The Midnight Library by Matt Haig book cover"></a>
+                        <p class="price-tag">$16.74</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="https://m.media-amazon.com/images/I/81LBl7WSLXL._AC_UF1000,1000_QL80_.jpg" alt="Metamorphosis by Franz Kafka book cover"></a>
+                        <p class="price-tag">$14.88</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="https://m.media-amazon.com/images/I/710CrKZ5U9L._AC_UF1000,1000_QL80_.jpg" alt="Ainda Estou Aqui by Marcelo Rubens Paiva book cover"></a>
+                        <p class="price-tag">$14.99</p>
+                    </div>
+                </div>
             </section>
             <section id="Special_Offers">
-                <header></header>
+                <header class="section-title">Special Offers</header>
+                <div class="gallery">
+                    <div>
+                        <a href=""><img src="https://m.media-amazon.com/images/I/71un2hI4mcL.jpg" alt="The Hunger Games by Suzanne Collins book cover"></a>
+                        <span class="sale">$14.99</span>
+                        <p class="price-tag">$13.94</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="https://m.media-amazon.com/images/I/61Gs9LIHu8L.jpg" alt="Catching Fire by Suzanne Collins book cover"></a>
+                        <span class="sale">$14.99</span>
+                        <p class="price-tag">$13.94</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="https://m.media-amazon.com/images/I/61n5pTMvmpL.jpg" alt="Mockingjay by Suzanne Collins book cover"></a>
+                        <span class="sale">$14.99</span>
+                        <p class="price-tag">$13.94</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="https://m.media-amazon.com/images/I/819tY-gDcWL.jpg" alt="The Ballad of Songbirds and Snakes by Suzanne Collins book cover"></a>
+                        <span class="sale">$16.99</span>
+                        <p class="price-tag">$15.80</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="https://m.media-amazon.com/images/I/81aY1lxk+9L.jpg" alt="To Kill a Mockingbird by Harper Lee book cover"></a>
+                        <span class="sale">$16.99</span>
+                        <p class="price-tag">$15.80</p>
+                    </div>
+                </div>
             </section>
             <section id="New_Releases">
-                <header></header>
+                <header class="section-title">New Releases</header>
+                <div class="gallery">
+                    <div>
+                        <a href=""><img src="https://m.media-amazon.com/images/I/61o5Q8IIq4L._AC_UF1000,1000_QL80_.jpg" alt="Sunrise on the Reaping by Suzanne Collins book cover"></a>
+                        <p class="price-tag">$26.03</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="https://m.media-amazon.com/images/I/71m1poMoxmL._UF1000,1000_QL80_.jpg" alt="The Guilt Pill by Saumya Dave book cover"></a>
+                        <p class="price-tag">$26.96</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="https://m.media-amazon.com/images/I/91Sypjsj7RL._AC_UF1000,1000_QL80_DpWeblab_.jpg" alt="Hellions by Julia Elliott book cover"></a>
+                        <p class="price-tag">$16.69</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="https://m.media-amazon.com/images/I/91o55iOhLTL._AC_UF1000,1000_QL80_.jpg" alt="A Palace Near the Wind by Ai Jiang book cover"></a>
+                        <p class="price-tag">$21.38</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="https://images.penguinrandomhouse.com/cover/9781640096738" alt="The Migrant Rain Falls in Reverse by Vinh Nguyen book cover"></a>
+                        <p class="price-tag">$25.11</p>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
+    <footer>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
