@@ -6,6 +6,7 @@ body {
     margin: 0;
     background-color: #efefef;
     letter-spacing: -1px;
+    font-family: 'Oswald', sans-serif;
 }
 
 #header {
@@ -106,6 +107,36 @@ section {
     font-size: 1.8em;
     font-weight: 600;
     padding: 14px 8px;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-tag {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 8px 0 0;
+}
+
+.sale {
+    color: #cf0c3b;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.teaser-title {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    display: flex;
+    width: 560px;
+    height: 315px;
+    margin: 24px auto 0;
 }
 
 footer {
