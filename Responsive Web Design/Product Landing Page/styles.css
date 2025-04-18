@@ -28,9 +28,10 @@ body {
     gap: 5px;
 }
 
-.logo svg {
+.logo #header-img {
     width: 32px;
     height: 32px;
+    margin-top: 4px;
 }
 
 #nav-bar {
@@ -177,8 +178,8 @@ footer a {
         font-size: 1.2em;
     }
 
-    .logo svg {
-        margin-top: 2px;
+    .logo #header-img {
+        margin-top: 3px;
         width: 20px;
         height: 20px;
     }
@@ -262,7 +263,7 @@ footer a {
         margin: 0;
     }
 
-    .logo svg {
+    .logo #header-img {
         margin-top: 1px;
         width: 7px;
         height: 7px;
