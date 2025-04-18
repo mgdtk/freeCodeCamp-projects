@@ -70,7 +70,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 #form {
@@ -166,4 +166,203 @@ footer a {
 #nav-bar a, footer a {
     color: #000000;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1280px) {
+    #header {
+        height: 50px;
+    }
+
+    .logo h1 {
+        font-size: 1.2em;
+    }
+
+    .logo svg {
+        margin-top: 2px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #nav-bar a {
+        font-size: 1.2em;
+    }
+
+    main {
+        top: 40px;
+        padding: 10px;
+    }
+
+    .email-submission {
+        margin: 5px 0;
+    }
+
+    .email-submission h2 {
+        font-size: 1em;
+    }
+
+    #form input {
+        width: 75%;
+        height: 20px;
+        padding: 1px 6px;
+        font-size: 0.6em;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        padding: 6px;
+    }
+
+    .gallery img {
+        width: 100px;
+        height: 160px;
+    }
+
+    section {
+        margin: 4px auto;
+    }
+
+    .section-title {
+        font-size: 1.2em;
+        padding: 1px 2px;
+    }
+
+    .price-tag {
+        font-size: 0.8em;
+        margin: 0;
+    }
+    
+    .teaser-title {
+        margin-top: 20px;
+    }
+
+    footer {
+        top: 50px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        letter-spacing: normal;
+    }
+
+    #header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo {
+        width: 100%;
+        height: 12px;
+        border-bottom: 1px solid #000000;
+        gap: 1px;
+    }
+
+    .logo h1 {
+        font-size: 0.4em;
+        margin: 0;
+    }
+
+    .logo svg {
+        margin-top: 1px;
+        width: 7px;
+        height: 7px;
+    }
+
+    #nav-bar {
+        width: 100%;
+    }
+
+    #nav-bar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #nav-bar li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid #000000;
+    }
+
+    #nav-bar a {
+        font-size: 0.2em;
+    }
+
+    main {
+        top: 40px;
+        padding: 5px;
+    }
+
+    .email-submission {
+        margin: 0;
+    }
+    
+    .email-submission h2 {
+        font-size: 0.6em;
+    }
+
+    #form input {
+        width: 50%;
+        height: 20px;
+        padding: 1px 6px;
+        font-size: 0.5em;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        padding: 10px;
+    }
+
+    .gallery img {
+        width: 50px;
+        height: 80px;
+    }
+
+    section {
+        margin: 5px auto;
+    }
+    
+    .section-title {
+        font-size: 0.7em;
+        padding: 1px 2px;
+    }
+
+    .prices {
+        gap: 1px;
+    }
+
+    .price-tag {
+        font-size: 0.5em;
+        margin: 0;
+    }
+
+    iframe {
+        width: 240px;
+        height: 135px;
+        margin: 12px auto 12px;
+    }
+
+    footer {
+        top: 40px;
+        height: 20px;
+        margin: 0;
+    }
+
+    footer ul {
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    footer li {
+        height: 100%;;
+    }
+
+    footer a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        font-size: 0.6em;
+    }
 }
