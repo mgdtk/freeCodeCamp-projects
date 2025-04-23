@@ -1,6 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
+:root {
+    /* Turquoise Scale */
+    --color-turquoise-50:  #f0fdfb;
+    --color-turquoise-100: #ccfbf3;
+    --color-turquoise-200: #99f6e8;
+    --color-turquoise-300: #5eeadb;
+    --color-turquoise-400: #30d5c8;
+    --color-turquoise-500: #14b8ae;
+    --color-turquoise-600: #0d948e;
+    --color-turquoise-700: #0f7673;
+    --color-turquoise-800: #115e5d;
+    --color-turquoise-900: #134e4d;
+    --color-turquoise-950: #042e2f;
+  
+    /* Aquamarine Scale */
+    --color-aquamarine-50:  #e9fff8;
+    --color-aquamarine-100: #cbffeb;
+    --color-aquamarine-200: #7fffd4;
+    --color-aquamarine-300: #5bfacf;
+    --color-aquamarine-400: #1becba;
+    --color-aquamarine-500: #00d4a4;
+    --color-aquamarine-600: #00ad88;
+    --color-aquamarine-700: #008a70;
+    --color-aquamarine-800: #006d5a;
+    --color-aquamarine-900: #00594b;
+    --color-aquamarine-950: #00332b;
+}
 
 /* https://uicolors.app/generate/30d5c8 */
 /* https://uicolors.app/generate/7fffd4 */
@@ -9,6 +36,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -24,8 +55,8 @@ body {
 
 #navbar {
     height: 10%;
-    background-color: #30d5c8;
-    background-image: linear-gradient(45deg, #30d5c8 0%, #7fffd4 60%);
+    background-color: var(--color-turquoise-400);
+    background-image: linear-gradient(45deg, var(--color-turquoise-400) 0%, var(--color-aquamarine-200) 60%);
 }
 
 #navbar ul {
@@ -47,7 +78,7 @@ body {
 #navbar a {
     font-family: 'Geologica', sans-serif;
     text-decoration: none;
-    color: #006d5a;
+    color: var(--color-aquamarine-800);
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1em;
@@ -60,7 +91,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-bottom: 1px solid #042e2f; /* Header height // Remove later */
+    border-bottom: 1px solid var(--color-turquoise-950); /* Header height // Remove later */
 }
 
 .skills {
@@ -96,7 +127,7 @@ li.field {
 .vertical {
     height: 100%;
     width: 1px;
-    background-color: #042e2f;
+    background-color: var(--color-turquoise-950);
     margin: 0 20px;
 }
 
@@ -120,9 +151,9 @@ h3 {
     font-family: 'Geologica', sans-serif;
 }
 
-span {
-    background-color: #5eeadb;
-    background-image: linear-gradient(30deg, #5eeadb 0%, #7fffd4 50%);
+#header-name {
+    background-color: var(--color-turquoise-300);
+    background-image: linear-gradient(30deg, var(--color-turquoise-300) 0%, var(--color-aquamarine-200) 50%);
     background-size: 100%;
     background-repeat: repeat;
     background-clip: text;
@@ -132,11 +163,78 @@ span {
     -moz-text-fill-color: transparent;
 }
 
-::selection {
-    background-color: #5eeadb;
-    color: #042e2f;
+header::selection {
+    background-color: var(--color-turquoise-300);
+    color: var(--color-turquoise-950);
 }
 
-span::selection {
-    color: #006d5a;
+#header-name::selection {
+    color: var(--color-aquamarine-800);
+}
+
+#navbar::selection {
+    background-color: var(--color-turquoise-400);
+    color: var(--color-turquoise-50);
+}
+
+#about {
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    background-image: linear-gradient(55deg, var(--color-aquamarine-300) 0%, var(--color-turquoise-200) 50%, var(--color-aquamarine-400) 95%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 45px;
+}
+
+#about h1 {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 900;
+    font-family: 'Geologica', sans-serif;
+    letter-spacing: -1px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    text-align: center;
+}
+
+.description p {
+    font-size: 1.5em;
+    color: var(--color-aquamarine-950);
+    margin: 20px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    line-height: 1.6em;
+}
+
+.about-span {
+    background-color: var(--color-turquoise-300);
+    background-image: linear-gradient(30deg, var(--color-turquoise-800) 0%, var(--color-aquamarine-600) 50%);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+#about::selection {
+    background-color: var(--color-turquoise-400);
+    color: var(--color-turquoise-50);
+}
+
+.about-span::selection {
+    color: var(--color-turquoise-700);
+}
+
+section#about {
+    border-bottom: 1px solid var(--color-turquoise-950); /* Section height // Remove later */
 }
