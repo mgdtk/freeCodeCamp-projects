@@ -47,6 +47,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Welcome Section */
+
 #welcome-section {
     height: 100vh;
     width: 100%;
@@ -54,9 +56,11 @@ body {
 }
 
 #navbar {
-    height: 10%;
+    height: 8%;
+    width: 100%;
     background-color: var(--color-turquoise-400);
     background-image: linear-gradient(45deg, var(--color-turquoise-400) 0%, var(--color-aquamarine-200) 60%);
+    position: fixed;
 }
 
 #navbar ul {
@@ -85,13 +89,12 @@ body {
 }
 
 header {
-    height: 90%;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-bottom: 1px solid var(--color-turquoise-950); /* Header height // Remove later */
 }
 
 .skills {
@@ -163,7 +166,7 @@ h3 {
     -moz-text-fill-color: transparent;
 }
 
-header::selection {
+header::selection, #projects::selection {
     background-color: var(--color-turquoise-300);
     color: var(--color-turquoise-950);
 }
@@ -176,6 +179,8 @@ header::selection {
     background-color: var(--color-turquoise-400);
     color: var(--color-turquoise-50);
 }
+
+/* About Section */
 
 #about {
     height: 100vh;
@@ -226,7 +231,7 @@ header::selection {
     -moz-text-fill-color: transparent;
 }
 
-#about::selection {
+#about::selection, #contact::selection {
     background-color: var(--color-turquoise-400);
     color: var(--color-turquoise-50);
 }
@@ -235,9 +240,7 @@ header::selection {
     color: var(--color-turquoise-700);
 }
 
-section#about {
-    border-bottom: 1px solid var(--color-turquoise-950); /* Section height // Remove later */
-}
+/* Projects Section */
 
 #projects {
     min-height: 100vh;
@@ -250,6 +253,10 @@ section#about {
     display: flex;
     justify-content: center;
     margin: 12px auto 60px;
+    text-decoration: underline;
+    font-weight: 800;
+    font-family: 'Geologica', sans-serif;
+    letter-spacing: -3px;
 }
 
 .projects-wrapper {
@@ -283,6 +290,51 @@ section#about {
     font-size: 1.5em;
 }
 
-section#projects {
-    border-bottom: 1px solid var(--color-turquoise-950); /* Section height // Remove later */
+/* Contact Section */
+
+#contact {
+    height: 90vh;
+    width: 100%;
+    background-color: #ffffff;
+    background-image: linear-gradient(55deg, var(--color-aquamarine-300) 0%, var(--color-turquoise-200) 50%, var(--color-aquamarine-400) 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+}
+
+#contact h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+#contact h2 {
+    text-align: center;
+    margin: 10px auto 50px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.icons-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4em;
+}
+
+#contact a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    margin: 8px;
 }
